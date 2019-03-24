@@ -1,8 +1,24 @@
 body, html {
     height: 100%;
+    padding:0;
+    margin:0;
+    box-sizing:content-box;
 }
 
-.bg1,.bg2,.bg3 {
+.header {
+    font-size: 42px;
+    color: black;
+}
+
+.subheader {
+    font-size: 24px;
+    color: black;
+}
+
+
+/*PARALLAX SECTION*/
+
+.bg1,.bg2,.bg3, .bg4, .bg5 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -12,8 +28,20 @@ body, html {
     min-height:70%;
 }
 .bg1{
+    background-image:url("../img/bg1.jpg")
 }
-
+.bg2 {
+    background-image: url("../img/bg2.jpg")
+}
+.bg3 {
+    background-image: url("../img/bg3.jpg")
+}
+.bg4 {
+    background-image: url("../img/bg4.jpg")
+}
+.bg5 {
+    background-image: url("../img/bg5.jpg")
+}
 a{
     text-decoration:none;
 }
@@ -24,25 +52,85 @@ a{
         background-attachment: scroll;
     }
 }
-
-#content{
-    background-color:blue;
-}
-.caption {
+.caption { /*style of the caption in the middle of the background*/
+    position:absolute; 
     left: 0;
-    top: 50%;
+    top:50%;
     width: 100%;
     text-align: center;
     color: #000;
 }
-.caption span.border {
+.caption span.border { /*the square around the text of the caption*/
     background-color: #111;
     color: #fff;
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
 }
+/*END OF PARALLAX SECTION*/
 
-#firstPart{
-    background-color:aliceblue;
+#contactbg{
+    min-height:93%;
+    overflow:auto;
+}
+.contactUsForm{
+    background-color:white;
+    position:absolute;
+    left:20%;
+    top:10%;
+    height:80%;
+    width:60%;
+    border-radius:2%;
+    overflow-x:auto;
+}
+
+.tableContactUs{
+    color:black;
+    font-size:24px;
+    position:absolute;
+}
+
+.tableContactUs th, .tableContactUs td {
+    padding:15px;
+    text-align:left;
+}
+.btnSubmit{
+    background-color:cornflowerblue;
+    border-radius:25px;
+}
+
+/*UL SECTION:*/
+ul { /*navigation bar on top*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 52px;
+    background-color: rgba(115, 203, 200, 0.65);
+    position: sticky;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+    overflow-x:auto;
+}
+
+ul li{
+    display:inline; /*makes it horizontal*/
+    float:left;
+}
+
+ul li a { /*style of the text inside the navigation bar*/
+    display: block;
+    padding: 11px;
+    text-align:center;
+    background-color: #dddddd;
+    color:darkred;
+}
+
+li a:hover{ /*when the navigation item is hovered, change background to cyan*/
+    background-color: cyan;
+}
+/*END OF UL SECTION*/
+
+.right{
+    float: right;
 }
