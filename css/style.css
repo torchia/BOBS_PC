@@ -1,7 +1,48 @@
-body{
-    margin:0 auto;
+body, html {
+    height: 100%;
 }
 
-html{
-    text-align:center;
+.bg1,.bg2,.bg3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:70%;
+}
+.bg1{
+}
+
+a{
+    text-decoration:none;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+#content{
+    background-color:blue;
+}
+.caption {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+#firstPart{
+    background-color:aliceblue;
 }
