@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bob's PC</title>
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="products.html">Products</a>
+        </li>
+        <li>
+            <a href="services.html">Services</a>
+        </li>
+        <li>
+            <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+        <li class="right">
+            <a href="login.html">Login</a>
+        </li>
+        <li class="right">
+            <a href="signup.html">Sign Up</a>
+        </li>
+    </ul>
+
+    <div class="bg1" id="loginbg">
+        <div class="signUpForm">
+            <form action="login" method="post">
+                <span class="header">Login:</span>
+                <table class="tableLogin">
+                    <tr>
+                        <td>
+                            <label for="Name">Name:</label>
+                        </td>
+                        <td>
+                            <input id="Name" name="Name" placeholder="Full Name" type="text" required />
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email:</label>
+                        </td>
+                        <td>
+                            <input id="Email" name="Email" placeholder="This will be your username." type="email" required />
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Pass">Password:</label>
+                        </td>
+                        <td>
+                            <input id="Pass" name="Pass" type="password" required />
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cPass">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input id="cPass" name="cPass" required />
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="btnSubmit" value="Sign Up" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

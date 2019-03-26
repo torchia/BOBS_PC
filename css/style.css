@@ -2,7 +2,6 @@ body, html {
     height: 100%;
     padding:0;
     margin:0;
-    box-sizing:content-box;
 }
 
 .header {
@@ -25,7 +24,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:70%;
+    min-height:100%;
 }
 .bg1{
     background-image:url("../img/bg1.jpg")
@@ -46,6 +45,9 @@ a{
     text-decoration:none;
 }
 
+#contactbg, #signupbg, #loginbg, #aboutusbg{
+    min-height:94.6%;
+}
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
     .parallax {
@@ -60,7 +62,7 @@ a{
     text-align: center;
     color: #000;
 }
-.caption span.border { /*the square around the text of the caption*/
+.caption .border { /*the square around the text of the caption*/
     background-color: #111;
     color: #fff;
     padding: 18px;
@@ -69,11 +71,7 @@ a{
 }
 /*END OF PARALLAX SECTION*/
 
-#contactbg{
-    min-height:93%;
-    overflow:auto;
-}
-.contactUsForm{
+.contactUsForm, .signUpForm{
     background-color:white;
     position:absolute;
     left:20%;
@@ -84,19 +82,27 @@ a{
     overflow-x:auto;
 }
 
-.tableContactUs{
+.tableContactUs, .tableSignUp, .tableLogin{
     color:black;
-    font-size:24px;
+    font-size:xx-large;
     position:absolute;
 }
 
-.tableContactUs th, .tableContactUs td {
-    padding:15px;
-    text-align:left;
+.tableContactUs th, .tableContactUs td,
+.tableSignUp th, .tableSignUp td,
+.tableLogin th, .tableLogin td{
+    padding: 15px;
+    text-align: left;
 }
 .btnSubmit{
     background-color:cornflowerblue;
     border-radius:25px;
+    width:200px;
+    font-size:xx-large;
+}
+
+table tr:hover{
+    background-color:rgba(221, 221, 221, 0.65);
 }
 
 /*UL SECTION:*/
@@ -113,9 +119,8 @@ ul { /*navigation bar on top*/
     overflow-x:auto;
 }
 
-ul li{
-    display:inline; /*makes it horizontal*/
-    float:left;
+ul li {
+    float: left; /*makes it horizontal*/
 }
 
 ul li a { /*style of the text inside the navigation bar*/
