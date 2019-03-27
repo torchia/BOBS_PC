@@ -1,7 +1,141 @@
-body{
-    margin:0 auto;
+body, html {
+    height: 100%;
+    padding:0;
+    margin:0;
 }
 
-html{
+.header {
+    font-size: 42px;
+    color: black;
+}
+
+.subheader {
+    font-size: 24px;
+    color: black;
+}
+
+
+/*PARALLAX SECTION*/
+
+.bg1,.bg2,.bg3, .bg4, .bg5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+}
+.bg1{
+    background-image:url("../img/bg1.jpg")
+}
+.bg2 {
+    background-image: url("../img/bg2.jpg")
+}
+.bg3 {
+    background-image: url("../img/bg3.jpg")
+}
+.bg4 {
+    background-image: url("../img/bg4.jpg")
+}
+.bg5 {
+    background-image: url("../img/bg5.jpg")
+}
+a{
+    text-decoration:none;
+}
+
+#contactbg, #signupbg, #loginbg, #aboutusbg{
+    min-height:94.6%;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+.caption { /*style of the caption in the middle of the background*/
+    position:absolute; 
+    left: 0;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption .border { /*the square around the text of the caption*/
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+/*END OF PARALLAX SECTION*/
+
+.contactUsForm, .signUpForm{
+    background-color:white;
+    position:absolute;
+    left:20%;
+    top:10%;
+    height:80%;
+    width:60%;
+    border-radius:2%;
+    overflow-x:auto;
+}
+
+.tableContactUs, .tableSignUp, .tableLogin{
+    color:black;
+    font-size:xx-large;
+    position:absolute;
+}
+
+.tableContactUs th, .tableContactUs td,
+.tableSignUp th, .tableSignUp td,
+.tableLogin th, .tableLogin td{
+    padding: 15px;
+    text-align: left;
+}
+.btnSubmit{
+    background-color:cornflowerblue;
+    border-radius:25px;
+    width:200px;
+    font-size:xx-large;
+}
+
+table tr:hover{
+    background-color:rgba(221, 221, 221, 0.65);
+}
+
+/*UL SECTION:*/
+ul { /*navigation bar on top*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: 52px;
+    background-color: rgba(115, 203, 200, 0.65);
+    position: sticky;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+    overflow-x:auto;
+}
+
+ul li {
+    float: left; /*makes it horizontal*/
+}
+
+ul li a { /*style of the text inside the navigation bar*/
+    display: block;
+    padding: 11px;
     text-align:center;
+    background-color: #dddddd;
+    color:darkred;
+}
+
+li a:hover{ /*when the navigation item is hovered, change background to cyan*/
+    background-color: cyan;
+}
+/*END OF UL SECTION*/
+
+.right{
+    float: right;
 }

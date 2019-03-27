@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bob's PC</title>
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="products.html">Products</a>
+        </li>
+        <li>
+            <a href="services.html">Services</a>
+        </li>
+        <li>
+            <a href="aboutus.html">About Us</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+        <li class="right">
+            <a href="login.html">Login</a>
+        </li>
+        <li class="right">
+            <a href="signup.html">Sign Up</a>
+        </li>
+    </ul>
+    <div class="bg1" id="contactbg">
+        <div class="contactUsForm">
+            <form method="post" id="contactUs">
+                <span class="header">Contact Us</span>
+                <table class="tableContactUs">
+                    <tr>
+                        <td>
+                            <label for="cName">
+                                Name:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="cName" required autofocus />
+                        </td>
+                        <td><label for="cEmail">Email:</label></td>
+                        <td><input type="email" id="cEmail" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cPhone">Phone Number:</label></td>
+                        <td><input type="tel" id="cPhone" /></td>
+                        <td><label for="cTopic">Topic:</label></td>
+                        <td>
+                            <select required>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Products">Products</option>
+                                <option value="Services">Services</option>
+                                <option value="Message">Message</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="subheader">Message:</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <textarea cols="80" rows="8"></textarea> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <input type="submit" value="Submit" class="btnSubmit" />
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
