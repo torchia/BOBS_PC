@@ -16,6 +16,28 @@ body, html {
 
 
 /*PARALLAX SECTION*/
+/*STYLES FOR SERVICES PAGE*/
+
+.upgrades, .contracts, .cleaning {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+.upgrades {
+    background-image: url("../img/upgrades.jpg")
+}
+.contracts {
+    background-image: url("../img/contracts.jpg")
+}
+.cleaning {
+    background-image: url("../img/contracts.jpg")
+}
+
+
 
 .bg1,.bg2,.bg3, .bg4, .bg5 {
     position: relative;
@@ -54,6 +76,21 @@ a{
         background-attachment: scroll;
     }
 }
+.middlestyle {/*style of the description of services and products*/
+    position: absolute;
+    top: 30%;
+    text-align: left;
+    color: #000;
+    left:25%;
+}
+.middlestyle .text { /*the square around the text of the description*/
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 28px;
+    opacity: 0.75;
+    width:60%;
+    }
 .caption { /*style of the caption in the middle of the background*/
     position:absolute; 
     left: 0;
@@ -70,7 +107,21 @@ a{
     letter-spacing: 10px;
 }
 /*END OF PARALLAX SECTION*/
-
+.backbtn { /*style of the back button on each service and product page*/
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.backbtn .border { /*the square around the text of the back Button*/
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
 .contactUsForm, .signUpForm{
     background-color:white;
     position:absolute;
