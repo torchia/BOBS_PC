@@ -3,8 +3,9 @@
     "",
     "\\css",
     "\\html",
-    "\\img"
+    "\\img",
+    "\\js"
   ],
-  "SelectedNode": "\\html\\contactus.html",
+  "SelectedNode": "\\html\\login.html",
   "PreviewInSolutionExplorer": false
 }
