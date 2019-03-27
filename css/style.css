@@ -18,7 +18,7 @@ body, html {
 /*PARALLAX SECTION*/
 /*STYLES FOR SERVICES PAGE*/
 
-.upgrades, .contracts {
+.upgrades, .contracts, .cleaning {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -31,6 +31,9 @@ body, html {
     background-image: url("../img/upgrades.jpg")
 }
 .contracts {
+    background-image: url("../img/contracts.jpg")
+}
+.cleaning {
     background-image: url("../img/contracts.jpg")
 }
 
