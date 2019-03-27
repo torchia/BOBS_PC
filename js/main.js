@@ -22,3 +22,31 @@ return false;
 }
 }
 }
+
+function signUp() {
+    var name = document.forms["signupform"]["Name"].value;
+    var email = document.forms["signupform"]["Email"].value;
+    var pass = document.forms["signupform"]["Pass"].value;
+    var cpass = document.forms["signupform"]["cPass"].value;
+    var test = document.getElementById("Test");
+    var test_ans = test.options[test.selectedIndex].text;
+
+    if (name == "" || email == ""|| pass == ""|| cpass == "") {
+        alert("Missing fields.")
+    }
+    else {
+        if (test_ans == "Yes") {
+            if (pass == cpass) {
+                //console.log("passwords match.");
+                location = "../html/confirmation.html";
+            }
+            else {
+                alert("passwords don't match.")
+            }
+        }
+        else {
+            alert("are you a robot? the answer is wrong.")
+        }
+    }
+    return false;
+}

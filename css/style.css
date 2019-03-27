@@ -76,16 +76,17 @@ a{
 .middlestyle {/*style of the description of services and products*/
     position: absolute;
     top: 30%;
-    width: 100%;
-    text-align: center;
+    text-align: left;
     color: #000;
+    left:25%;
 }
-.middlestyle .border { /*the square around the text of the description*/
+.middlestyle .text { /*the square around the text of the description*/
     background-color: #111;
     color: #fff;
     padding: 18px;
-    font-size: 25px;
+    font-size: 28px;
     opacity: 0.75;
+    width:60%;
     }
 .caption { /*style of the caption in the middle of the background*/
     position:absolute; 
