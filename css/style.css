@@ -17,10 +17,8 @@ body, html {
 
 /*PARALLAX SECTION*/
 /*STYLES FOR SERVICES PAGE*/
-.upgrades {
-    background-image:url("../img/upgrades.jpg")
-}
-.upgrades {
+
+.upgrades, .contracts {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -29,6 +27,15 @@ body, html {
     background-size: cover;
     min-height: 100%;
 }
+.upgrades {
+    background-image: url("../img/upgrades.jpg")
+}
+.contracts {
+    background-image: url("../img/contracts.jpg")
+}
+
+
+
 .bg1,.bg2,.bg3, .bg4, .bg5 {
     position: relative;
     opacity: 0.65;
@@ -92,7 +99,7 @@ a{
     background-color: #111;
     color: #fff;
     padding: 18px;
-    font-size: 18px;
+    font-size: 25px;
     letter-spacing: 10px;
 }
 /*END OF PARALLAX SECTION*/
