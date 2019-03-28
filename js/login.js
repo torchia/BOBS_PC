@@ -1,25 +1,63 @@
+$(function () {
+    $("#username_error_message").hide();
+    $("#password_error_message").hide();
 
+    var error_username = false;
+    var error_password = false;
 
-var attempt = 3; // Variable to count number of attempts.
+    $("#form_username").focusout(function () {
 
-// Below function Executes on click of login button.
-function login() {
-    var username = document.getElementById("Email").value;
-    var password = document.getElementById("Password").value;
-    if (username == "test@test.com" && password == "123") {
-        alert("Login successfully");
-        window.location = "index.html"; // Redirecting to other page.
-        return false;
+        check_username();
+
+    });
+
+    $("#form_password").focusout(function () {
+
+        check_password();
+
+    });
+
+    function check_username() {
+
+        var username = $("#form_username").val();
+
+        if (username == "test@test.com") {
+            $("#username_error_message").html("No user with that username");
+            $("#username_error_message").show();
+            error_username = true;
+        } else {
+            $("#username_error_message").hide();
+        }
+
     }
-    else {
-        attempt--;// Decrementing by one.
-        alert("You have left " + attempt + " attempt;");
-        // Disabling fields after 3 attempts.
-        if (attempt == 0) {
-            document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
+
+    function check_password() {
+
+        var password = $("#form_password").val();
+
+        if (password != "adminlogin") {
+            $("#password_error_message").html("Incorrect Password");
+            $("#password_error_message").show();
+            error_password = true;
+        } else {
+            $("#password_error_message").hide();
+        }
+
+    }
+
+    $("#loginForm").submit(function () {
+
+        error_username = false;
+        error_password = false;
+
+        check_username();
+        check_password();
+
+        if (error_username == false && error_password == false) {
+            return true;
+        } else {
             return false;
         }
-    }
-}
+
+    });
+});
