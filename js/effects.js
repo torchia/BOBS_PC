@@ -16,6 +16,23 @@ $(document).ready(function () {
             $(this).css('display', 'block');
         });
     });
+
+    // Effect to shrink as mouse goes over
+    $("#upgrades,#contracts,#cleaning,#custompcs,#tuning").mouseover(function () {
+        var minHeight = $(this).css('min-height');
+        $(this).slideDown("slow", function () {
+            $(this).css('min-height', "20%");
+            $(this).css('display', 'block');
+        });
+    });
+    // Attempt to make it big again when mouse goes out (didn't work)
+    $("#upgrades,#contracts,#cleaning,#custompcs,#tuning").onmouseout(function () {
+        var maxHeight = $(this).css('min-height');
+        $(this).slideUp("slow", function () {
+            $(this).css('min-height', "90%");
+            $(this).css('display', 'block');
+        });
+    });
     $(".caption .text").dblclick(function () {
         $(this).animate({
             fontSize:100

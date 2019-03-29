@@ -19,9 +19,9 @@ body, html {
 }
 
 /*PARALLAX SECTION*/
-/*STYLES FOR SERVICES PAGE*/
 
-.upgrades, .contracts, .cleaning {
+/*STYLES FOR SERVICES PAGE*/
+.upgrades, .contracts, .cleaning, .custompcs, .tuning {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -37,7 +37,44 @@ body, html {
     background-image: url("../img/contracts.jpg")
 }
 .cleaning {
-    background-image: url("../img/contracts.jpg")
+    background-image: url("../img/cleaning.jpg")
+}
+.custompcs {
+    background-image: url("../img/custompcs.jpg")
+}
+.tuning {
+    background-image: url("../img/tuning.jpg")
+}
+
+/*STYLES FOR PRODUCTS PAGE*/
+.office, .smasher, .youtube, .gaming, .enthusiast {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.office {
+    background-image: url("../img/office.jpg")
+}
+
+.smasher {
+    background-image: url("../img/smasher.jpg")
+}
+
+.youtube {
+    background-image: url("../img/youtube.jpg")
+}
+
+.gaming {
+    background-image: url("../img/gaming.jpg")
+}
+
+.enthusiast {
+    background-image: url("../img/enthusiast.jpg")
 }
 
 
@@ -58,10 +95,10 @@ body, html {
     background-image: url("../img/bg2.jpg")
 }
 .bg3 {
-    background-image: url("../img/bg3.jpg")
+    background-image: url("../img/aboutus.jpg")
 }
 .bg4 {
-    background-image: url("../img/upgrades.jpg")
+    background-image: url("../img/contactus.jpg")
 }
 .bg5 {
     background-image: url("../img/contracts.jpg")
@@ -105,8 +142,8 @@ a{
 .caption .border { /*the square around the text of the caption*/
     background-color: #111;
     color: #fff;
-    padding: 18px;
-    font-size: 25px;
+    padding: 2px;
+    font-size: 30px;
     letter-spacing: 10px;
 }
 
