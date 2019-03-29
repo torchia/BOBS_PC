@@ -14,11 +14,14 @@ body, html {
     color: black;
 }
 
+.error_form{
+    font-size:medium;
+}
 
 /*PARALLAX SECTION*/
 /*STYLES FOR SERVICES PAGE*/
 
-.upgrades, .contracts {
+.upgrades, .contracts, .cleaning {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -31,6 +34,9 @@ body, html {
     background-image: url("../img/upgrades.jpg")
 }
 .contracts {
+    background-image: url("../img/contracts.jpg")
+}
+.cleaning {
     background-image: url("../img/contracts.jpg")
 }
 
@@ -55,10 +61,10 @@ body, html {
     background-image: url("../img/bg3.jpg")
 }
 .bg4 {
-    background-image: url("../img/bg4.jpg")
+    background-image: url("../img/upgrades.jpg")
 }
 .bg5 {
-    background-image: url("../img/bg5.jpg")
+    background-image: url("../img/contracts.jpg")
 }
 a{
     text-decoration:none;
@@ -76,16 +82,17 @@ a{
 .middlestyle {/*style of the description of services and products*/
     position: absolute;
     top: 30%;
-    width: 100%;
-    text-align: center;
+    text-align: left;
     color: #000;
+    left:25%;
 }
-.middlestyle .border { /*the square around the text of the description*/
+.middlestyle .text { /*the square around the text of the description*/
     background-color: #111;
     color: #fff;
     padding: 18px;
-    font-size: 25px;
+    font-size: 28px;
     opacity: 0.75;
+    width:60%;
     }
 .caption { /*style of the caption in the middle of the background*/
     position:absolute; 
@@ -101,6 +108,13 @@ a{
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+}
+
+.caption .text {
+    background-color: white;
+    color: black;
+    padding: 18px;
+    font-size: 38px;
 }
 /*END OF PARALLAX SECTION*/
 .backbtn { /*style of the back button on each service and product page*/
@@ -127,6 +141,16 @@ a{
     width:60%;
     border-radius:2%;
     overflow-x:auto;
+}
+
+.loginForm {
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    height: 40%;
+    width: 40%;
+    border-radius: 2%;
 }
 
 .tableContactUs, .tableSignUp, .tableLogin{
